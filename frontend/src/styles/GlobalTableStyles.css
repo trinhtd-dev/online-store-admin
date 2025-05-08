@@ -1,0 +1,29 @@
+/* Global Table Styles */
+.data-table .ant-table-cell {
+  vertical-align: middle !important;
+  padding: 12px 8px;
+  height: auto !important;
+  overflow-wrap: break-word;
+}
+
+.data-table .ant-table-row {
+  height: auto !important;
+}
+
+.data-table .ant-table-cell p,
+.data-table .ant-table-cell a,
+.data-table .ant-table-cell span {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+/* Cải thiện hiển thị trên các thiết bị nhỏ */
+@media (max-width: 768px) {
+  .data-table .ant-table-cell {
+    padding: 8px 4px;
+  }
+
+  .ant-table-content {
+    overflow-x: auto;
+  }
+}
